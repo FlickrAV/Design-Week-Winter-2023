@@ -8,6 +8,7 @@ public class HydraulicPress : MonoBehaviour
     private Vector3 initialPos;
     private Rigidbody2D rb;
     private float t;
+    public float height;
     public bool pressing = false;
     // Start is called before the first frame update
 
@@ -24,7 +25,7 @@ public class HydraulicPress : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        height = transform.position.y;
     }
 
     private void FixedUpdate() 

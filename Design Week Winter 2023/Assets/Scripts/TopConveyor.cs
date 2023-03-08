@@ -23,7 +23,7 @@ public class TopConveyor : MonoBehaviour
         {
             speed -= 0.5f;
         }
-        if (press.pressing == false && speed < 5)
+        if (press.pressing == false && speed < 5 && press.height > 6.5)
         {
             speed += 0.5f;
         }
