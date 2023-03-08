@@ -10,7 +10,10 @@ public class Object : MonoBehaviour
     private Animator anim;
     private HydraulicPress press;
     private int animSpeed;
-
+    public int moneyGained;
+    [HideInInspector]
+    public bool crushed = false;
+    private bool moneyReceived = false;
     private GameManager manager;
     // Start is called before the first frame update
     void Awake()
@@ -29,6 +32,12 @@ public class Object : MonoBehaviour
             animSpeed = 0;
 
         anim.SetFloat("animSpeed", animSpeed);
+
+        if(crushed && !moneyReceived)
+        {
+            manager.money += moneyGained;
+            moneyReceived = true;
+        }
     }
 
     private void FixedUpdate()

@@ -5,23 +5,20 @@ using UnityEngine.UI;
 
 public class UiManager : MonoBehaviour
 {
-    public int money;
-    public int price;
+    private int price;
     public Text moneyText;
-    public string itemName;
     private GameManager manager;
     private GameObject prefabToAdd;
-    bool firstObjectGet = false;
+    private bool firstObjectGet = false;
 
     void Awake()
     {
-        money = 10;
         manager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     void Update()
     {
-        moneyText.text = "$" + money.ToString();
+        moneyText.text = "$" + manager.money.ToString();
     }
 
     public void GetPrefab(GameObject prefab)
@@ -32,9 +29,9 @@ public class UiManager : MonoBehaviour
     public void BuyItem(GameObject item)
     {
         price = int.Parse(item.transform.GetChild(1).gameObject.GetComponent<Text>().text.Replace("$", string.Empty));
-        if(money >= price)
+        if(manager.money >= price)
         {
-            money -= price;
+            manager.money -= price;
             manager.objects.Add(prefabToAdd);
             if(!firstObjectGet)
             {

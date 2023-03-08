@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public List<GameObject> objects;
+    public int money;
 
     public void SpawnNewObject()
     {

@@ -9,6 +9,7 @@ public class HydraulicPress : MonoBehaviour
     private Rigidbody2D rb;
     private float t;
     public float height;
+    [HideInInspector]
     public bool pressing = false;
     // Start is called before the first frame update
 
