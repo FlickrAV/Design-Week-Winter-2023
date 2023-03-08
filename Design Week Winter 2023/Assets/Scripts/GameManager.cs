@@ -8,8 +8,6 @@ public class GameManager : MonoBehaviour
 
     public void SpawnNewObject()
     {
-        Debug.Log(objects[Random.Range(0,objects.Count)].name);
-        Debug.Log(objects.Capacity);
-        //Instantiate(objects[Random.Range(0, objects.Capacity)], new Vector3(15, 0, 0), Quaternion.identity);
+        Instantiate(objects[Random.Range(0, objects.Count)], new Vector3(15, 0, 0), Quaternion.identity);
     }
 }

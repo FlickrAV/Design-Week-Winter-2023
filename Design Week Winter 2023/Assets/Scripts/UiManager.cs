@@ -19,19 +19,9 @@ public class UiManager : MonoBehaviour
         manager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
-    private void Start() 
-    {
-        InvokeRepeating("SpawnTest", 0, 5);
-    }
-
     void Update()
     {
         moneyText.text = "$" + money.ToString();
-    }
-
-    void SpawnTest()
-    {
-        manager.SpawnNewObject();
     }
 
     public void GetPrefab(GameObject prefab)
@@ -48,17 +38,12 @@ public class UiManager : MonoBehaviour
             manager.objects.Add(prefabToAdd);
             if(!firstObjectGet)
             {
-                manager.objects.RemoveAt(0);
-                manager.objects.TrimExcess();
                 firstObjectGet = true;
+                Instantiate(manager.objects[Random.Range(0, manager.objects.Count)], new Vector3(15, 0, 0), Quaternion.identity);
             }
             item.GetComponent<Image>().color = Color.white;
             item.transform.GetChild(0).GetComponent<Text>().text = prefabToAdd.name;
             item.transform.GetChild(1).gameObject.SetActive(false);
-        }
-        else
-        {
-            //item.GetComponent<Animator>().speed = 1;
         }
     }
 }

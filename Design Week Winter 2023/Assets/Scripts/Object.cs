@@ -9,8 +9,7 @@ public class Object : MonoBehaviour
     private bool againstBelt = false;
     private Animator anim;
     private HydraulicPress press;
-    public GameObject prefab;
-    public int animSpeed;
+    private int animSpeed;
 
     private GameManager manager;
     // Start is called before the first frame update
