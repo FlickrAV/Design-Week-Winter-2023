@@ -239,7 +239,7 @@ RectTransform:
   - {fileID: 972005981}
   - {fileID: 455809488}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -336,10 +336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a70d3191bd16b224eb6330b0efb71e95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 0
-  price: 0
   moneyText: {fileID: 455809486}
-  itemName: 
 --- !u!4 &380770639
 Transform:
   m_ObjectHideFlags: 0
@@ -353,7 +350,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &455809485
 GameObject:
@@ -590,7 +587,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: $5
+  m_Text: $10
 --- !u!222 &531351455
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -809,6 +806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objects: []
+  money: 50
 --- !u!4 &689753093
 Transform:
   m_ObjectHideFlags: 0
@@ -822,7 +820,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &857084134
 GameObject:
@@ -1133,7 +1131,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: $5
+  m_Text: $50
 --- !u!222 &1000087980
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1683,7 +1681,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1426870557
 GameObject:
@@ -1916,7 +1914,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2083991299
 GameObject:
