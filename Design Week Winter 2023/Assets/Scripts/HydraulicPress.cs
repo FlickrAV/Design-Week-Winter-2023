@@ -8,6 +8,7 @@ public class HydraulicPress : MonoBehaviour
     private Vector3 initialPos;
     private Rigidbody2D rb;
     private float t;
+    public bool pressing = false;
     // Start is called before the first frame update
 
     private void Awake() 
@@ -33,11 +34,13 @@ public class HydraulicPress : MonoBehaviour
             rb.AddForce((Vector2.down * speed), ForceMode2D.Impulse);
             //rb.velocity = new Vector2(0, -speed);
             t = 0;
+            pressing = true;
         }
         else
         {
             transform.position = Vector3.Lerp(transform.position, initialPos, t);
-            t += Time.deltaTime/50;        
+            t += Time.deltaTime/50;
+            pressing = false;
         }
     }
 }
