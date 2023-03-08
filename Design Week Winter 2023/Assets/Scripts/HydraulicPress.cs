@@ -31,6 +31,7 @@ public class HydraulicPress : MonoBehaviour
         if(Input.GetKey(KeyCode.Space))
         {
             rb.AddForce((Vector2.down * speed), ForceMode2D.Impulse);
+            //rb.velocity = new Vector2(0, -speed);
             t = 0;
         }
         else

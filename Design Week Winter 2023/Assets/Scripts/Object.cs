@@ -22,7 +22,7 @@ public class Object : MonoBehaviour
         else
             animSpeed = 0;
 
-        anim.speed = animSpeed;
+        anim.SetFloat("animSpeed", animSpeed);
     }
 
     private void OnCollisionEnter2D(Collision2D other) 
@@ -32,7 +32,7 @@ public class Object : MonoBehaviour
             againstPress = true;
         }
 
-        if(other.gameObject.name == "Conveyor Belt")    
+        if(other.gameObject.tag == "Conveyor Belt")    
         {
             againstBelt = true;
         }
@@ -45,7 +45,7 @@ public class Object : MonoBehaviour
             againstPress = false;
         }
 
-        if(other.gameObject.name == "Conveyor Belt")    
+        if(other.gameObject.tag == "Conveyor Belt")    
         {
             againstBelt = false;
         }

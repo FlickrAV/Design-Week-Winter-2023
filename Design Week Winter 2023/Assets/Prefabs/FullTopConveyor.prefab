@@ -88,7 +88,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: TopConveyorPart
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6211624716964285214, guid: 9d2df129526dec44bb20d8f57dc965d1, type: 3}
+    - {fileID: 6586699108017218555, guid: 9d2df129526dec44bb20d8f57dc965d1, type: 3}
+    - {fileID: 6860986849295062932, guid: 9d2df129526dec44bb20d8f57dc965d1, type: 3}
+    - {fileID: 7709923906471364127, guid: 9d2df129526dec44bb20d8f57dc965d1, type: 3}
+    - {fileID: 2857794947174202581, guid: 9d2df129526dec44bb20d8f57dc965d1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9d2df129526dec44bb20d8f57dc965d1, type: 3}
 --- !u!4 &1791928913370997094 stripped
 Transform:
@@ -150,7 +155,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: TopConveyorPart (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6211624716964285214, guid: 9d2df129526dec44bb20d8f57dc965d1, type: 3}
+    - {fileID: 6586699108017218555, guid: 9d2df129526dec44bb20d8f57dc965d1, type: 3}
+    - {fileID: 6860986849295062932, guid: 9d2df129526dec44bb20d8f57dc965d1, type: 3}
+    - {fileID: 7709923906471364127, guid: 9d2df129526dec44bb20d8f57dc965d1, type: 3}
+    - {fileID: 2857794947174202581, guid: 9d2df129526dec44bb20d8f57dc965d1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9d2df129526dec44bb20d8f57dc965d1, type: 3}
 --- !u!4 &5794744439447534456 stripped
 Transform:
