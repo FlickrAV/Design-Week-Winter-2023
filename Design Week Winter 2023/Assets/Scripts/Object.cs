@@ -11,11 +11,14 @@ public class Object : MonoBehaviour
     private HydraulicPress press;
     public GameObject prefab;
     public int animSpeed;
+
+    private GameManager manager;
     // Start is called before the first frame update
     void Awake()
     {
         press = GameObject.Find("Press").GetComponent<HydraulicPress>();
         anim = GetComponent<Animator>();
+        manager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -33,7 +36,7 @@ public class Object : MonoBehaviour
     {
         if (transform.position.x <= -15)
         {
-            Instantiate(prefab, new Vector3(15, 0, 0), Quaternion.identity);
+            manager.SpawnNewObject();
             Destroy(gameObject);
         }
 
