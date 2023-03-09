@@ -38,10 +38,26 @@ public class Object : MonoBehaviour
             manager.money += moneyGained;
             moneyReceived = true;
         }
+        speed = Mathf.Clamp(speed, 0, 15);
     }
 
     private void FixedUpdate()
     {
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            if (press.pressing == false && press.height > 6.5)
+            {
+                speed += 0.1f;
+            }
+        }
+        else
+        {
+            if (press.pressing == false && press.height > 6.5f)
+            {
+                speed = 5f;
+            }
+        }
+
         if (transform.position.x <= -15)
         {
             manager.SpawnNewObject();
