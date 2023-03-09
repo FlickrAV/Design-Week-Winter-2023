@@ -15,12 +15,16 @@ public class Object : MonoBehaviour
     public bool crushed = false;
     private bool moneyReceived = false;
     private GameManager manager;
+    private AudioSource audioSource;
+    public bool soundStart = false;
+    bool sounStarted = false;
     // Start is called before the first frame update
     void Awake()
     {
         press = GameObject.Find("Press").GetComponent<HydraulicPress>();
         anim = GetComponent<Animator>();
         manager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -37,6 +41,12 @@ public class Object : MonoBehaviour
         {
             manager.money += moneyGained;
             moneyReceived = true;
+        }
+
+        if(soundStart && !sounStarted)
+        {
+            audioSource.Play();
+            sounStarted = true;
         }
         speed = Mathf.Clamp(speed, 0, 15);
     }

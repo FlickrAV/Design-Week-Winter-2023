@@ -39,6 +39,7 @@ public class UiManager : MonoBehaviour
                 Instantiate(manager.objects[Random.Range(0, manager.objects.Count)], new Vector3(15, 0, 0), Quaternion.identity);
             }
             item.GetComponent<Image>().color = Color.white;
+            item.GetComponent<Button>().interactable = false;
             item.transform.GetChild(0).GetComponent<Text>().text = prefabToAdd.name;
             item.transform.GetChild(1).gameObject.SetActive(false);
         }
