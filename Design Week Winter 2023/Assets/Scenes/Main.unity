@@ -1450,7 +1450,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objects: []
-  money: 30000
+  money: 10
   luigiPrefab: {fileID: 2415212041354720047, guid: 7c255e0c4a3ff1b4496ca3b111c5756b, type: 3}
 --- !u!4 &689753093
 Transform:
