@@ -53,6 +53,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moneyGained: 1500
   crushed: 0
+  luigiSource: {fileID: 0}
+  soundStart: 0
 --- !u!212 &4774715732193290848
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4959,7 +4961,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a505e5704099e1843b9fbaaf5ef21eea, type: 2}
+  - {fileID: 2100000, guid: e3e4bdf5f4c48e74998c24bfb1d7cb8d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
