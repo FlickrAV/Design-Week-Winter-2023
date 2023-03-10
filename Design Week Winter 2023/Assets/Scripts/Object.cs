@@ -16,6 +16,7 @@ public class Object : MonoBehaviour
     private bool moneyReceived = false;
     private GameManager manager;
     private AudioSource audioSource;
+    public AudioSource luigiSource;
     public bool soundStart = false;
     bool sounStarted = false;
     // Start is called before the first frame update
@@ -25,6 +26,14 @@ public class Object : MonoBehaviour
         anim = GetComponent<Animator>();
         manager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         audioSource = GetComponent<AudioSource>();
+    }
+
+    private void Start() 
+    {
+        if(gameObject.tag == "Luigi")    
+        {
+            luigiSource.PlayDelayed(1);
+        }
     }
 
     // Update is called once per frame

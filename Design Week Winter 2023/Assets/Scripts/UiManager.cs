@@ -18,7 +18,7 @@ public class UiManager : MonoBehaviour
 
     void Update()
     {
-        moneyText.text = "$" + manager.money.ToString();
+        moneyText.text = manager.money.ToString();
     }
 
     public void GetPrefab(GameObject prefab)
